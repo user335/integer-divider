@@ -35,14 +35,11 @@ namespace integer_divider
                 {
                     Console.WriteLine("Argument Exception detected. I blame you.");
                 }
-                catch (DivideByZeroException)
-                {
-                    Console.WriteLine("Are you trying to make me divide by zero? Not cool, bro!");
-                }
                 catch (Exception ex)
                 {
                     Console.WriteLine("I have no idea what you did. Error message = " + ex);
                 }
+                if (divisor == 0) Console.WriteLine("Are you trying to make me divide by zero? Not cool, bro!");
                 if (divisor <= 0) Console.WriteLine("Let's try that again...");
             }
 
